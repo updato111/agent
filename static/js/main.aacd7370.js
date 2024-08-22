@@ -56154,6 +56154,15 @@
                     let s = await (async e=>await Zm("getMe", {
                         referrer_id: e
                     }))(a);
+                    if (s) {
+                        (0,
+                        o.hk)(Mp, s),
+                        $m(i);
+                        let e = await vv();
+                        e && (0,
+                        o.hk)(Bp, e)
+                    } else
+                        alert("Our servers are under heavy load. Please, try again later \ud83d\ude35")
                 }
                 ))
             }()
