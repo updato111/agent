@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"/>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+        <style>
+            .mobile-body {
+                overflow: hidden;
+                height: 100vh
+            }
+
+            .mobile-wrap {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                overflow-x: hidden;
+                overflow-y: auto
+            }
+
+            .mobile-content {
+                height: calc(100% + 1px)
+            }
+        </style>
+        <script defer="defer" src="./static/js/main.aacd7370.js"></script>
+        <link href="./static/css/main.a4e1b7c0.css" rel="stylesheet">
+    </head>
+    <body oncontextmenu="return!1" unselectable="on" onselectstart="return!1">
+        <div id="wrap">
+            <div id="root"></div>
+        </div>
+        <script src="https://unpkg.com/@telegram-apps/sdk@1.0.0/dist/index.iife.js"></script>
+        <script>
+            !function() {
+                var {retrieveLaunchParams: e} = window.telegramApps.sdk
+                  , t = e();
+                ["macos", "tdesktop", "weba", "web", "webk"].includes(t.platform) || (document.body.classList.add("mobile-body"),
+                document.getElementById("wrap").classList.add("mobile-wrap"),
+                document.getElementById("root").classList.add("mobile-content"))
+            }()
+        </script>
+    </body>
+</html>
